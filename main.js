@@ -86,4 +86,20 @@ console.log(123456);
 // callback, promise, async/await...
 
 
+// Thầy Sơn chia sẻ về kiến thức đồng bộ
+// chạy đồng bộ thì dễ dàng lấy kết quả của A làm đầu vào của B.
+
+// Nhưng chạy bất đồng bộ thì lại khó khăn, bởi A chưa chạy xong đã chạy tới B rồi.
+
+// Nên ngta tạo ra callback, callback giúp ta biết khi nào việc bất đồng bộ thực thi xong, mặc dù code đã chạy qua đoạn trên đó lâu rồi.
+
+// Callback khi gặp các tác vụ phụ thuộc nhau (kết quả của A lại là đầu vào của B) ... sẽ sinh ra callback hell, dẫn tới khó đọc và khó bảo trì.
+
+// Ngta tạo ra Promise để quản lý công việc bất đồng bộ bằng cú pháp theo chuỗi (promise chain) dạng: promise.then(...).then(...).then(...)...
+
+// Promise dùng ko theo chain như trên thì cũng Promise hell, dùng đúng cách thì cú pháp vẫn chưa clear, chạy có vẻ tuần tự nhưng code trông chưa tự nhiên.
+
+// Sau đó sinh ra async và await là cú pháp mới giúp thể hiện promise trông giống như là viết code đồng bộ, giúp khắc phục các vấn đề của callback và promise.
+
+
 
